@@ -17,7 +17,7 @@
 
 /* Right: 38% green */
 .rightPanel {
-  width: 38%;
+  width: 45%;
   background: var(--green);
   display: flex;
   align-items: center;
