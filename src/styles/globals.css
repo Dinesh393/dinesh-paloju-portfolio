@@ -57,3 +57,13 @@ ul {
   background: var(--green);
   border-radius: 3px;
 }
+
+/* Section Labels */
+.sectionLabel,
+[class*="sectionLabel"] {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+  letter-spacing: 0.15em !important;
+}

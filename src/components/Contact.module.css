@@ -218,3 +218,24 @@
   .formRow { grid-template-columns: 1fr; }
   .form { padding: 1.5rem; }
 }
+
+.successMsg {
+  padding: 0.8rem 1rem;
+  background: #f0faf0;
+  border: 1.5px solid var(--green);
+  color: var(--green);
+  font-size: 0.88rem;
+}
+
+.errorMsg {
+  padding: 0.8rem 1rem;
+  background: #fff5f5;
+  border: 1.5px solid #e53e3e;
+  color: #e53e3e;
+  font-size: 0.88rem;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

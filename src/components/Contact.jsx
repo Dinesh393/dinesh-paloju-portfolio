@@ -1,18 +1,39 @@
+import { useState } from "react";
 import { personalInfo } from "../data/portfolioData";
 import styles from "./Contact.module.css";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("sending");
+
     const form = e.target;
-    const mailto = `mailto:${personalInfo.email}?subject=${encodeURIComponent(form.subject.value)}&body=${encodeURIComponent(`Name: ${form.name.value}\n\n${form.message.value}`)}`;
-    window.location.href = mailto;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/xeepdwkw", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
     <section className={styles.contact} id="contact">
       <div className={styles.container}>
-        <span className={styles.sectionLabel}>05 — Contact</span>
+        <span className={styles.sectionLabel}>Contact</span>
 
         <div className={styles.content}>
           {/* LEFT */}
@@ -75,11 +96,11 @@ const Contact = () => {
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
                   <label className={styles.label}>Your Name</label>
-                  <input name="name" type="text" className={styles.input} placeholder="John Doe" required />
+                  <input name="name" type="text" className={styles.input} placeholder="Enter your name" required />
                 </div>
                 <div className={styles.formGroup}>
                   <label className={styles.label}>Your Email</label>
-                  <input name="email" type="email" className={styles.input} placeholder="john@email.com" required />
+                  <input name="email" type="email" className={styles.input} placeholder="Enter your mail" required />
                 </div>
               </div>
               <div className={styles.formGroup}>
@@ -90,19 +111,34 @@ const Contact = () => {
                 <label className={styles.label}>Message</label>
                 <textarea name="message" className={styles.textarea} placeholder="Tell me about your project or opportunity..." rows={5} required />
               </div>
-              <button type="submit" className={styles.submitBtn}>
-                Send Message
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <line x1="22" y1="2" x2="11" y2="13"/>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                </svg>
+
+              {/* Status Messages */}
+              {status === "success" && (
+                <div className={styles.successMsg}>
+                  ✅ Hey I receieved your message! I'll get back to you soon.
+                </div>
+              )}
+              {status === "error" && (
+                <div className={styles.errorMsg}>
+                  ❌ Something went wrong. Please try again.
+                </div>
+              )}
+
+              <button type="submit" className={styles.submitBtn} disabled={status === "sending"}>
+                {status === "sending" ? "Sending..." : "Send Message"}
+                {status !== "sending" && (
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                )}
               </button>
             </form>
           </div>
         </div>
 
         <div className={styles.footer}>
-          <p>© {new Date().getFullYear()} Paloju Dinesh.</p>
+          <p>© {new Date().getFullYear()} Paloju Dinesh. Built with React.</p>
         </div>
       </div>
     </section>

@@ -54,16 +54,8 @@ const Hero = () => {
             <span>Replace with your image</span>
           </div>
         </div>
-        <div className={styles.floatingTag}>
-          <span>Data Analyst</span>
-        </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className={styles.scrollIndicator}>
-        <div className={styles.scrollLine} />
-        <span>scroll</span>
-      </div>
     </section>
   );
 };
