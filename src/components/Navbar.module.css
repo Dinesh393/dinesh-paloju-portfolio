@@ -7,8 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 5%;
+  padding: 1rem 5%;
   transition: var(--transition);
+  background: rgba(245, 240, 232, 0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 20px rgba(45, 80, 22, 0.08);
 }
 
 .navbar.scrolled {
