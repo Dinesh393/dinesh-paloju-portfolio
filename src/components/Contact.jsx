@@ -138,7 +138,7 @@ const Contact = () => {
         </div>
 
         <div className={styles.footer}>
-          <p>© {new Date().getFullYear()} Paloju Dinesh. Built with React.</p>
+          <p>© {new Date().getFullYear()} Paloju Dinesh.</p>
         </div>
       </div>
     </section>
