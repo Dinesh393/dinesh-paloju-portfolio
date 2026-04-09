@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
+html, body {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 :root {
-  --green: #2D5016;
-  --green-mid: #3d6b1e;
-  --green-light: #4a7f24;
+  --green: #1B2A4A;
+  --green-mid: #2D4270;
+  --green-light: #3D5A8A;
+  --accent: #4A90D9;
   --offwhite: #F5F0E8;
   --offwhite-dim: #ede7d9;
   --text-dark: #1a1a1a;
