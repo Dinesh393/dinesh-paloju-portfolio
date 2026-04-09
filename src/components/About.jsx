@@ -26,10 +26,6 @@ const About = () => {
                 <span className={styles.statLabel}>Projects Completed</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.statNum}>2mo</span>
-                <span className={styles.statLabel}>Industry Experience</span>
-              </div>
-              <div className={styles.stat}>
                 <span className={styles.statNum}>10+</span>
                 <span className={styles.statLabel}>Tools Mastered</span>
               </div>
