@@ -150,11 +150,12 @@
   display: flex;
   gap: 0.75rem;
   margin-bottom: 2rem;
+  justify-content: flex-start;
 }
 
 .socialBtn {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   border: 1.5px solid #d0c9bc;
   border-radius: 50%;
   display: flex;
@@ -162,6 +163,11 @@
   justify-content: center;
   color: var(--text-dark);
   transition: var(--transition);
+}
+
+.socialBtn svg {
+  width: 22px;
+  height: 22px;
 }
 
 .socialBtn:hover {
