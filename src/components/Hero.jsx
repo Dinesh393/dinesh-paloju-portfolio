@@ -42,19 +42,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right panel - forest green, 40% */}
-      <div className={styles.rightPanel}>
-        <div className={styles.photoPlaceholder}>
-          <div className={styles.photoInner}>
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-            <p>Your photo here</p>
-            <span>Replace with your image</span>
-          </div>
-        </div>
-      </div>
+
 
     </section>
   );
