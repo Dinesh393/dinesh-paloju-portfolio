@@ -94,17 +94,6 @@ Performed end-to-end analysis of retail sales data to uncover sales trends, seas
 
 🔗 https://dinesh-paloju-portfolio.vercel.app/
 
----
-
-## 📬 Contact
-Email
-📧 dineshpaloju453@gmail.com
-
-## GitHub
-🐙 https://github.com/Dinesh393
-
-## LinkedIn
-💼 https://linkedin.com/in/dinesh-paloju
 
 ## 📄 License
 © 2026 Paloju Dinesh. All Rights Reserved.
