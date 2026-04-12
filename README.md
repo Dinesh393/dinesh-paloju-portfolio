@@ -1,16 +1,66 @@
-# React + Vite
+# 🌐 Paloju Dinesh Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website built to showcase my **skills, projects, experience, and contact details**.
 
-Currently, two official plugins are available:
+🔗 **Live Website:** https://dinesh-paloju-portfolio.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
+- Responsive modern UI
+- About, Skills, Projects, Experience, Contact sections
+- Smooth single-page navigation
+- Resume download option
+- Deployed on Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- React
+- JavaScript
+- HTML
+- CSS
+- Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📥 Installation & Setup
+
+### 1️⃣ Install Node.js and npm
+Download and install Node.js from the official website:
+
+https://nodejs.org/
+
+Verify installation:
+
+```bash
+node -v
+npm -v
+2️⃣ Clone the Repository
+git clone https://github.com/your-username/your-portfolio-repo.git
+cd your-portfolio-repo
+3️⃣ Install Dependencies
+npm install
+4️⃣ Run the Project Locally
+npm start
+
+The app will run at:
+
+http://localhost:3000
+🧱 Create a React App from Scratch (Optional)
+npx create-react-app portfolio
+cd portfolio
+npm start
+🌐 Live Demo
+
+https://dinesh-paloju-portfolio.vercel.app/
+
+📬 Contact
+📧 Email: dineshpaloju453@gmail.com
+🐙 GitHub: https://github.com/Dinesh393
+💼 LinkedIn: https://linkedin.com/in/dinesh-paloju
+
+© 2026 Paloju Dinesh
+
+
+Perfect single `README.md` content — just paste this directly into the file 👍
