@@ -12,18 +12,18 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --dark-bg: #1E2A2A;      /* renamed from --green */
-  --dark-bg-mid: #2E3F3F;  /* renamed from --green-mid */
-  --dark-bg-light: #4A5E5E;/* renamed from --green-light */
-  --accent-muted: #C8D4C8;
-  --offwhite: #F2F0E8;
-  --offwhite-dim: #E6E3D8;
-  --text-dark: #1a1a1a;
-  --text-muted: #6b6b6b;
-  --accent: #7AB892;
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'DM Sans', sans-serif;
-  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --green: #1E2A2A;        /* was #2C2C2A — new dark bg */
+  --green-mid: #2E3F3F;    /* was #444441 — new surface */
+  --green-light: #4A5E5E;  /* was #5F5E5A — cooler mid tone */
+  --accent: #C8D4C8;       /* was #B4B2A9 — sage muted */
+  --offwhite: #F2F0E8;     /* was #F5F0E8 — keep as is, very close */
+  --offwhite-dim: #E6E3D8; /* was #ede7d9 — slight cool shift */
+  --text-dark: #1a1a1a;    /* no change */
+  --text-muted: #6b6b6b;   /* no change */
+  --accent: #7AB892;       /* was #7ab648 — green → sage */
+  --font-display: 'Cormorant Garamond', serif;  /* no change */
+  --font-body: 'DM Sans', sans-serif;           /* no change */
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);  /* no change */
 }
 
 *, *::before, *::after {
