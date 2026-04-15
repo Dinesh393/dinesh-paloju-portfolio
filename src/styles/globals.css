@@ -12,12 +12,12 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --green: #2C2C2A;
-  --green-mid: #444441;
-  --green-light: #5F5E5A;
-  --accent: #B4B2A9;
-  --offwhite: #F5F0E8;
-  --offwhite-dim: #ede7d9;
+  --green: #0A192F;        /* deep navy */
+  --green-mid: #112240;    /* rich dark blue */
+  --green-light: #233554;  /* soft muted blue */
+  --accent: #64B5F6;       /* elegant light blue accent */
+  --offwhite: #FFFF;
+  --offwhite-dim: #FFFF;
   --text-dark: #1a1a1a;
   --text-muted: #6b6b6b;
   --accent: #7ab648;

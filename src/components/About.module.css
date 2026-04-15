@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .about {
   background: var(--green);
   padding: 7rem 8%;
