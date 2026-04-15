@@ -12,18 +12,18 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --green: #2C2C2A;
-  --green-mid: #444441;
-  --green-light: #5F5E5A;
-  --accent: #B4B2A9;
-  --offwhite: #F5F0E8;
-  --offwhite-dim: #ede7d9;
-  --text-dark: #1a1a1a;
-  --text-muted: #6b6b6b;
-  --accent: #7ab648;
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'DM Sans', sans-serif;
-  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --green: #1E2A2A;        
+  --green-mid: #2E3F3F;    
+  --green-light: #4A5E5E;  
+  --accent: #C8D4C8;
+  --offwhite: #F2F0E8;     
+  --offwhite-dim: #E6E3D8; 
+  --text-dark: #1a1a1a;    
+  --text-muted: #6b6b6b;   
+  --accent: #7AB892;       
+  --font-display: 'Cormorant Garamond', serif;  
+  --font-body: 'DM Sans', sans-serif;           
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);  
 }
 
 *, *::before, *::after {
