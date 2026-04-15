@@ -54,10 +54,6 @@ ul {
   list-style: none;
 }
 
-::selection {
-  background: var(--green);
-  color: var(--offwhite);
-}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -65,8 +61,13 @@ ul {
 ::-webkit-scrollbar-track {
   background: var(--offwhite);
 }
+::selection {
+  background: var(--dark-bg);   /* was var(--green) */
+  color: var(--offwhite);
+}
+
 ::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: var(--dark-bg);   /* was var(--green) */
   border-radius: 3px;
 }
 
