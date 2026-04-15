@@ -12,24 +12,18 @@ body::-webkit-scrollbar {
 }
 
 :root {
-  --dark-bg: #0F1F2E;       /* deep navy */
-  --dark-bg-mid: #1A2E42;   /* navy surface */
-  --dark-bg-light: #2A4560; /* lighter navy */
-  --accent-muted: #A8B8D0;  /* steel blue muted */
-  --offwhite: #F2F0E8;
-  --offwhite-dim: #E6E3D8;
+  --green: #2C2C2A;
+  --green-mid: #444441;
+  --green-light: #5F5E5A;
+  --accent: #B4B2A9;
+  --offwhite: #F5F0E8;
+  --offwhite-dim: #ede7d9;
   --text-dark: #1a1a1a;
   --text-muted: #6b6b6b;
-  --accent: #4A90D9;        /* blue accent instead of sage green */
+  --accent: #7ab648;
   --font-display: 'Cormorant Garamond', serif;
   --font-body: 'DM Sans', sans-serif;
   --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 html {
