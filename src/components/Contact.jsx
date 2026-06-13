@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { personalInfo } from "../data/portfolioData";
 import styles from "./Contact.module.css";
+import Reveal from "./Reveal";
 
 const Contact = () => {
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
@@ -37,7 +39,7 @@ const Contact = () => {
 
         <div className={styles.content}>
           {/* LEFT */}
-          <div className={styles.left}>
+          <Reveal className={styles.left} y={30}>
             <h2 className={styles.heading}>
               Let's work<br />
               <em>together.</em>
@@ -88,10 +90,10 @@ const Contact = () => {
                 <span className={styles.socialArrow}>↗</span>
               </a>
             </div>
-          </div>
+          </Reveal>
 
           {/* RIGHT - Contact Form */}
-          <div className={styles.right}>
+          <Reveal className={styles.right} y={30} delay={0.15}>
             <form className={styles.form} onSubmit={handleSubmit}>
               <div className={styles.formRow}>
                 <div className={styles.formGroup}>
@@ -112,7 +114,6 @@ const Contact = () => {
                 <textarea name="message" className={styles.textarea} placeholder="Tell me about your project or opportunity..." rows={5} required />
               </div>
 
-              {/* Status Messages */}
               {status === "success" && (
                 <div className={styles.successMsg}>
                   ✅ Hey I receieved your message! I'll get back to you soon.
@@ -124,7 +125,13 @@ const Contact = () => {
                 </div>
               )}
 
-              <button type="submit" className={styles.submitBtn} disabled={status === "sending"}>
+              <motion.button
+                type="submit"
+                className={styles.submitBtn}
+                disabled={status === "sending"}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+              >
                 {status === "sending" ? "Sending..." : "Send Message"}
                 {status !== "sending" && (
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -132,9 +139,9 @@ const Contact = () => {
                     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
                   </svg>
                 )}
-              </button>
+              </motion.button>
             </form>
-          </div>
+          </Reveal>
         </div>
 
         <div className={styles.footer}>
